@@ -17,4 +17,15 @@ The goal is to use NoSQl cluster, and upload, filter, process the data in a new 
 * Data points with missing or invalid fields: Navigational status, 
 * MMSI, Latitude, Longitude, Navigational status, ROT, SOG, COG, Heading.  (Please approach invalid field creatively)
 * Vessel data point where COG ==0
-* Latitude and longitude out of range of WGS84 
+* Latitude and longitude out of range of WGS84.
+
+### Steps:
+
+* ~~Setup MongoDB on local~~
+* connect with cluster,.
+    * ~~Create a cluster, (Atlas or Compass?)~~
+    * ~~Connect cluster on local. (Using python or mongod?)~~
+* Read data and push the data to the cluster./
+* Access the data and filter the data as per the requirements.
+* Push the clean data to new cluster/collation (hint: to use indexes)
+* Finally read the data and perform the required analysis of the data.
